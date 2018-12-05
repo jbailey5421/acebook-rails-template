@@ -40,7 +40,7 @@ Devise.setup do |config|
   # session. If you need permissions, you should implement that in a before filter.
   # You can also supply a hash where the value is a boolean determining whether
   # or not authentication should be aborted when the value is not present.
-  # config.authentication_keys = [:email]
+
 
   # Configure parameters from the request object used for authentication. Each entry
   # given should be a request method and it will automatically be passed to the
@@ -112,6 +112,7 @@ Devise.setup do |config|
   # algorithm), the cost increases exponentially with the number of stretches (e.g.
   # a value of 20 is already extremely slow: approx. 60 seconds for 1 calculation).
   config.stretches = Rails.env.test? ? 1 : 11
+  config.authentication_keys = [:login]
 
   # Set up a pepper to generate the hashed password.
   # config.pepper = 'dd14fe1e7b9c9e87a7dbec7a907e05bff46dee39713bf2a58d83c64ec1137f4cdc909d674aecc9cdf14244041a1a0b25174fd0e9cee4c68218394afeb2758afd'
