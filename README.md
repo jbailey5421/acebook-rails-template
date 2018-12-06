@@ -54,3 +54,24 @@ As a user
 So that I can give feedback to another user
 I want to be able to add a comment to another users post.
 ```
+
+## Features
+
+- Users can sign up
+- Users can log in
+- Users can also log out
+- Users can make posts
+- Users can update posts
+- Users can delete posts
+- Users can like a post (only once)
+- Users can comment on other users posts
+
+## Technologies
+
+- Bootstrap
+- Devise
+- Rails
+- Ruby 2.5.1
+- RSpec
+- Sass
+- Heroku
